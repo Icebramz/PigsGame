@@ -12,4 +12,4 @@ The first player to score 100 or more points wins.
 
 From: https://en.wikipedia.org/wiki/Pig_(dice_game)
 
-This implementation is a single player game against a computer player.
+This implementation is a single player game against a computer player.  
