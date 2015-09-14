@@ -3,6 +3,8 @@
 #include<iostream>
 #include<string>
 #include<assert.h>
+#include<stdlib.h>
+#include<time.h>
 
 using namespace std;
 
@@ -21,7 +23,7 @@ void Person::play_game()
 
  if(user_input == "roll")
  {
-  cout << "Player rolled" << endl;
+  cout << "Player rolled a:" << player_roll() << endl;
  }
  else if(user_input == "hold")
  {
@@ -31,5 +33,13 @@ void Person::play_game()
  {
   cout << "not an option" << endl;
  }
+}
+
+int Person::player_roll()
+{
+ int dice_roll;
+ srand(time(NULL));
+ dice_roll = (rand()%6) + 1;
+ return dice_roll;
 } 
 
