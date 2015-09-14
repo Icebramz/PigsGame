@@ -1,25 +1,20 @@
-#include <iostream>
 #include "computer.h"
-#include <time.h>
-#include "stdlib.h"
+#include "person.h"
+
+#include<iostream>
+#include<string>
+#include<time.h>
+#include<stdlib.h>
 
 using namespace std;
 
-void Date::turn(){
-  
-  int diceSides = 6;
+Computer::Computer()
+{
+ computer_total_score = 0;
+}
 
-  while(turnScore <= targetScore){
-    int thisRoll = rand()%diceSides;
-    if(thisRoll == 0){
-      turnScore = 0;
-      break;
-    }
-    else{
-      turnScore += thisRoll;
-    }
-  }
-  
-  overallScore += turnScore;
-
+void Computer::play_game()
+{
+ cout << "Computer is now playing!" << endl;
+ cout << "Computers score is: " << computer_total_score << endl;
 }

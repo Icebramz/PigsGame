@@ -1,3 +1,6 @@
+#ifndef PERSON_H
+#define PERSON_H
+
 #include<iostream>
 
 
@@ -12,3 +15,5 @@ class Person
   int *player_total_score;
 
 };
+
+#endif

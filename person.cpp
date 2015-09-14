@@ -1,4 +1,5 @@
-#include "Person.h"
+#include "person.h"
+#include "computer.h"
 
 #include<iostream>
 #include<string>
@@ -28,7 +29,6 @@ void Person::play_game()
 
   while(initial_input != "hold" && current_roll == 0)
   {
-   cout << "Player, your total score is: " << *player_total_score << endl;
    current_roll = player_roll();
   
    cout << "You rolled a: " << current_roll << endl;
@@ -51,6 +51,9 @@ void Person::play_game()
    running_total = 0;
    *player_total_score += running_total;
    cout << "Your score is still: " << *player_total_score << endl;
+
+   Computer c1;
+   c1.play_game();
   }
 
   if(initial_input == "hold")
@@ -58,6 +61,9 @@ void Person::play_game()
    cout << "player decided to hold" << endl;
    *player_total_score += running_total;
    cout << "Your score is: " << *player_total_score << endl;
+
+   Computer c1;
+   c1.play_game();
   }
 }
 
