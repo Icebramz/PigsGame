@@ -9,6 +9,6 @@ class Person
   int player_roll(); 
 
  private:
-  int player_total_score;
+  int *player_total_score;
 
 };
