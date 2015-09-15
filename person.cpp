@@ -51,9 +51,13 @@ void Person::play_game()
    running_total = 0;
    *player_total_score += running_total;
    cout << "Your score is still: " << *player_total_score << endl;
+<<<<<<< HEAD
 
    Computer c1;
    c1.play_game();
+=======
+   
+>>>>>>> dfaef41236746c88629575b37b59b30072c7dcba
   }
 
   if(initial_input == "hold")
@@ -61,9 +65,13 @@ void Person::play_game()
    cout << "player decided to hold" << endl;
    *player_total_score += running_total;
    cout << "Your score is: " << *player_total_score << endl;
+<<<<<<< HEAD
 
    Computer c1;
    c1.play_game();
+=======
+   
+>>>>>>> dfaef41236746c88629575b37b59b30072c7dcba
   }
 }
 
