@@ -1,8 +1,5 @@
 #include "person.h"
-<<<<<<< HEAD
-=======
 #include "computer.h"
->>>>>>> dfaef41236746c88629575b37b59b30072c7dcba
 
 #include<iostream>
 #include<string>
@@ -11,10 +8,6 @@ using namespace std;
 
 int main()
 {
-<<<<<<< HEAD
- Person p1;
- p1.play_game();
-=======
   Person p1;
   Computer c1;
   bool playing = true;
@@ -32,5 +25,4 @@ int main()
     playing = false;
    }
   }
->>>>>>> dfaef41236746c88629575b37b59b30072c7dcba
 }
