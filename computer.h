@@ -6,7 +6,7 @@ class Computer
   public:
    Computer();
    void play_game();
-   int computer_roll;
+   int computer_roll();
    
   private:
    int *computer_total_score;
