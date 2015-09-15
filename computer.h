@@ -1,16 +1,16 @@
 #ifndef COMPUTER_H
 #define COMPUTER_H
 
-class Computer{
-
+class Computer
+{
   public:
-    Date(int i) {targetScore = i; turnScore = 0; overallScore = 0;}
-    int targetScore;
-    int turnScore;
-    int overallScore;
-
+   Computer();
+   void play_game();
+   int computer_roll();
+   int getScore(){return computer_total_score;}
   private:
-    void turn();
+   int computer_total_score;
+   int target_score;
 
 };
 
