@@ -21,14 +21,12 @@ void Computer::play_game()
  
  cout << "Computer is now playing!" << endl;
  cout << "Computers score is: " << computer_total_score << endl;
-<<<<<<< HEAD
 
  current_roll = computer_roll();
   
-=======
+ cout << "time to roll" << endl;
  cout << "Computers initial roll is: " << computer_roll() << endl;
  cout << "change" << endl;
->>>>>>> 3733cf1e31068bb7ff1a3ba9b748c3a0182b1a00
 }
 
 int Computer::computer_roll()
