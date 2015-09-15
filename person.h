@@ -7,6 +7,7 @@
 class Person
 {
  public:
+  // entered comment
   Person();
   void play_game();
   int player_roll(); 
