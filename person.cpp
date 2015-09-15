@@ -51,7 +51,6 @@ void Person::play_game()
    running_total = 0;
    *player_total_score += running_total;
    cout << "Your score is still: " << *player_total_score << endl;
-   
   }
 
   if(initial_input == "hold")
