@@ -11,24 +11,6 @@ using namespace std;
 Computer::Computer()
 {
  computer_total_score = 0;
-<<<<<<< HEAD
-}
-
-void Computer::play_game()
-{
- int roll_value = 0;
- int current_roll = 0;
- int running_total = 0;
- 
- cout << "Computer is now playing!" << endl;
- cout << "Computers score is: " << computer_total_score << endl;
-
- current_roll = computer_roll();
-  
- cout << "time to roll" << endl;
- cout << "Computers initial roll is: " << computer_roll() << endl;
- cout << "change" << endl;
-=======
  target_score = 12;
 }
 
@@ -64,7 +46,6 @@ void Computer::play_game()
  }
  computer_total_score += this_turn;
  cout << "Computer's total score is: " << computer_total_score << endl;
->>>>>>> dfaef41236746c88629575b37b59b30072c7dcba
 }
 
 int Computer::computer_roll()
