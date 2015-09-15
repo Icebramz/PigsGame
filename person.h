@@ -14,6 +14,7 @@ class Person
 
  private:
   int *player_total_score;
+  int i;
 
 };
 
