@@ -15,9 +15,15 @@ Computer::Computer()
 
 void Computer::play_game()
 {
+ int roll_value = 0;
+ int current_roll = 0;
+ int running_total = 0;
+ 
  cout << "Computer is now playing!" << endl;
  cout << "Computers score is: " << computer_total_score << endl;
- cout << "Computers initial roll is: " << computer_roll() << endl;
+
+ current_roll = computer_roll();
+  
 }
 
 int Computer::computer_roll()
