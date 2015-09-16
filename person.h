@@ -10,10 +10,10 @@ class Person
   Person();
   void play_game();
   int player_roll(); 
-  int getScore(){return *player_total_score;}
+  int getScore(){return player_total_score;}
 
  private:
-  int *player_total_score;
+  int player_total_score;
 
 };
 
