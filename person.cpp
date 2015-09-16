@@ -12,7 +12,7 @@ using namespace std;
 
 Person::Person()
 {
- *player_total_score = 0;
+ player_total_score = 0;
 }
 
 void Person::play_game()
@@ -23,7 +23,7 @@ void Person::play_game()
  int running_total = 0;
 
 
-  cout << "Player, your total score is: " << *player_total_score << endl;
+  cout << "Player, your total score is: " << player_total_score << endl;
   cout << "Player, would you like to roll, or will you hold?" << endl;
   getline(cin, initial_input);
 
@@ -49,15 +49,15 @@ void Person::play_game()
   {
    cout << "You rolled a 1, no points added for current turn" << endl;
    running_total = 0;
-   *player_total_score += running_total;
-   cout << "Your score is still: " << *player_total_score << endl;
+   player_total_score += running_total;
+   cout << "Your score is still: " << player_total_score << endl;
   }
 
   if(initial_input == "hold")
   {
    cout << "player decided to hold" << endl;
-   *player_total_score += running_total;
-   cout << "Your score is: " << *player_total_score << endl;
+   player_total_score += running_total;
+   cout << "Your score is: " << player_total_score << endl;
   }
 }
 
